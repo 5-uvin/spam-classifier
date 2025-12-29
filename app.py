@@ -9,10 +9,13 @@ st.title("Spam Message Detector")
 message = st.text_area("Enter a message:")
 
 if st.button("Predict"):
-    data = vectorizer.transform([message])
-    prediction = model.predict(data)[0]
-    
-    if prediction == 1:
-        st.error("🚨 Spam Message")
+    if message.strip() == "":
+        st.warning("Please enter a message")
     else:
-        st.success("✅ Not Spam")
+        data = vectorizer.transform([message])
+        prediction = model.predict(data)[0]
+
+if prediction == 1:
+    st.error("🚨 Spam Message")
+else:
+    st.success("✅ Not Spam")
