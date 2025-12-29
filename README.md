@@ -7,3 +7,20 @@ The model is trained on the SMS Spam Collection dataset and uses TF-IDF vectoriz
 The system accurately identifies common spam patterns such as promotional language (e.g., “Congratulations”, “win”, “free”, “click link”). Like most real-world ML models, it may occasionally misclassify messages with unusual spelling, formatting, or unseen word patterns, which reflects realistic limitations of data-driven models.
 
 This project demonstrates the end-to-end machine learning workflow, including data preprocessing, model training, evaluation, model persistence, and cloud deployment
+
+
+🛠 Technologies Used
+
+Python
+
+Scikit-learn
+
+TF-IDF Vectorizer
+
+Multinomial Naive Bayes
+
+Streamlit
+
+Google Colab
+
+GitHub
